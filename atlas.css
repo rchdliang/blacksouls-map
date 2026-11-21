@@ -1,0 +1,51 @@
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#171b1b;color:#e4e6df;font:15px/1.45 "Microsoft YaHei UI",system-ui,sans-serif}body{display:grid;grid-template-columns:285px 1fr}aside{padding:20px;background:#202625;border-right:1px solid #424b46;overflow:auto}h1{font:700 23px Georgia,serif;letter-spacing:.04em;margin:0 0 18px}h2{font-size:15px;margin:19px 0 8px}small,.muted{color:#bdc8bf;font-size:12px}button,select,input{font:inherit;color:inherit;background:#2d3532;border:1px solid #59655d;border-radius:5px;padding:6px 9px}button{cursor:pointer}button:hover,button:focus-visible{background:#3b4941;border-color:#a4c9af}button[aria-pressed=true]{background:#405e4c}select,input{width:100%;margin:4px 0}aside button{width:100%;text-align:left;margin-top:5px}.ex small{display:block}main{min-width:0;min-height:0;display:flex;flex-direction:column}.top{padding:12px 17px;background:#242a28;display:flex;gap:9px;align-items:center;flex-wrap:wrap}.top strong{font-size:19px;margin-right:auto}.top button{font-size:14px}.area{flex:1;overflow:auto;position:relative;background:#101514}.stage{position:relative;margin:auto;line-height:0}.stage img{width:100%;height:100%;image-rendering:pixelated}.stage svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.pin{position:absolute;transform:translate(-50%,-50%);padding:0;min-width:18px;height:18px;line-height:15px;border-radius:5px;background:#ffdf8f;color:#151912;border:1px solid #241e10;font:bold 12px/15px system-ui;box-shadow:0 1px 4px #000}.pin:hover{color:#fff}.loc{position:absolute;transform:translate(-50%,-50%);border:2px solid #fff;background:#188bb2;width:14px;height:14px;border-radius:50%;box-shadow:0 0 0 2px #172f39;pointer-events:none}details{margin-top:16px}summary{cursor:pointer}details p{font-size:13px;color:#c2cfc3}
+@media(max-width:720px){body{grid-template-columns:1fr;grid-template-rows:auto 1fr}aside{max-height:25vh;padding:10px 14px}h1{font-size:16px;margin:0}.top{gap:5px;padding:7px}.top strong{font-size:15px}.top button{padding:4px}}
+.exitChoice{margin:5px 0 0}.exitChoice>summary{padding:6px 9px;background:#2d3532;border:1px solid #59655d;border-radius:5px}.exitChoice>summary small{display:block;margin-left:14px}.exitChoice>button{width:calc(100% - 12px);margin-left:12px}
+.firepin{position:absolute;transform:translate(-50%,-50%);width:23px;height:23px;padding:0;border:2px solid #ffd2a3;border-radius:50%;background:#6b240c;color:white;font:14px/18px "Segoe UI Emoji",sans-serif;box-shadow:0 1px 4px #000;z-index:1}.firepin:hover,.firepin:focus-visible{background:#963908}.loc{z-index:2}
+.npcSearch{margin-top:18px}.npcSearch>label{font-weight:650}.npcSearch>small{display:block;margin-top:5px}.npcSearch button small{display:block}#npcPlaces{max-height:29vh;overflow:auto} .npcPin{position:absolute;transform:translate(-50%,-84%);width:32px;height:36px;padding:1px;border:0;background:transparent;box-shadow:none;z-index:3;overflow:visible}
+.npcPin{width:var(--npc-size,32px);height:calc(var(--npc-size,32px) * 1.125)}
+.npcPin img{position:relative;display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;image-rendering:pixelated;filter:drop-shadow(0 1px 1px black) drop-shadow(0 0 1px white);pointer-events:none}
+.npcPin::before{content:'';position:absolute;left:20%;right:20%;bottom:0;height:5px;border:1px solid #c5e8fc;border-radius:50%;background:#326479}
+.npcPin:hover,.npcPin:focus-visible,.npcPin.chosenNpc{background:#172b3bad;border-radius:5px;outline:2px solid #b9ebff;outline-offset:1px}
+aside a{color:#a8d9ff}
+.pin.npcName{background:#193039;color:#e0f3f7;border-color:#84b2bf;pointer-events:none}
+.pin.itemName{background:#e7e0f1;color:#362644;border-color:#a08cae;pointer-events:none}
+.mount{display:grid;place-items:center;min-width:100%;min-height:100%;width:max-content;height:max-content}#frame{position:relative;overflow:hidden}.stage{position:absolute;margin:0}.stage>#mapimg{display:block}.area{min-height:0}button[hidden]{display:none}
+.pin{transform:none;width:max-content;height:auto;min-height:18px;min-width:0;font:600 12px/1.3 'Microsoft YaHei UI',system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;padding:2px 5px;z-index:1;text-align:center;color:#241e12;background:#ffe2a6;border-radius:4px}.pin:hover,.pin:focus-visible{color:#211c10;background:#fff1d1;z-index:5}
+#changes{position:absolute;inset:0;pointer-events:none}#changes img{position:absolute;image-rendering:pixelated}#shortcutBox{margin:15px 0}#shortcutBox summary{font-weight:650}#shortcutList>div{margin:7px 0;padding:6px 0;border-bottom:1px solid #414c45}#shortcutList small{display:block}#shortcutList button{width:auto;font-size:12px;margin-right:4px}.controlPin{position:absolute;transform:translate(-50%,-100%);background:#40332a;color:#ffd9ae;border:1px solid #faac67;line-height:18px;padding:1px 4px;border-radius:4px;white-space:nowrap;pointer-events:none;z-index:3}
+.shortcutPin{position:absolute;transform:translate(-50%,-80%);padding:1px 4px;border:1px solid #f4b985;border-radius:3px;font:600 11px/15px 'Microsoft YaHei UI',sans-serif;background:#492f22;color:#ffe3b9;z-index:1;white-space:nowrap}.shortcutPin.active{outline:2px solid #fff3d4;z-index:3}
+.featureLabel{position:absolute;z-index:1;line-height:16px;display:block;padding:2px 5px;color:#ffe0a8;background:#4c341d;border:1px solid #cf9a65;border-radius:4px;font-size:12px;text-align:center}.pin.hazard{background:#ffd3da;border-color:#843848;color:#55232a}
+.mapSymbol{position:absolute;transform:translate(-50%,-50%);width:18px;height:18px;color:#edf2f6;background:#26373ce8;border:1px solid #a3b6b9;border-radius:50%;z-index:2}.mapSymbol svg{display:block;width:100%;height:100%}
+#overviewOpen{margin:0 0 14px}
+#overviewPane{display:none;min-width:0;min-height:0;flex-direction:column}
+.isOverview #overviewPane{display:flex}
+.isOverview main,.isOverview #shortcutBox,.isOverview #exitHeading,.isOverview #exits{display:none}
+#overviewScroll{flex:1;min-height:0;overflow:auto;background-color:#171d1a;background-image:radial-gradient(#38413a 0.7px,transparent 0.8px);background-size:15px 15px}
+#overviewMount{min-height:100%;min-width:100%;width:max-content;display:grid;place-items:center}
+#overviewSheet{position:relative;aspect-ratio:1280/870;container-type:inline-size}
+#worldLinks,#regionTargets{position:absolute;inset:0;width:100%;height:100%}
+#worldLinks{overflow:visible;pointer-events:none;fill:none;stroke:#9aab93;stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round}
+#worldLinks .linked{stroke:#f4d8a4;stroke-width:4}
+button.regionTarget{position:absolute;transform:translate(-50%,-50%);width:14%;height:7%;display:grid;grid-template-rows:minmax(0,1fr) 36%;gap:0;margin:0;padding:0;border:1px solid #617067;border-radius:5px;overflow:hidden;background:#252c28;color:#f2f1e6;box-shadow:0 3px 8px #080d0a80;cursor:pointer}
+.regionTarget img{display:block;width:100%;height:100%;object-fit:cover}
+.regionTarget span{display:grid;place-items:center;white-space:nowrap;padding:0 2px;font:600 1.32cqw/1.15 'Microsoft YaHei UI',system-ui,sans-serif;letter-spacing:.01em}
+.regionTarget[aria-current="true"]{border-color:#dbcb9d;box-shadow:0 0 0 2px #bda67770,0 3px 8px #080d0a80}
+.regionTarget:hover,.regionTarget:focus-visible{outline:2px solid #f6dba9;outline-offset:2px;z-index:1;background:#354238}
+
+.pin.shelfName{background:#efe5ce;color:#332b1e;border-color:#ab9878}
+#shelfRoom{width:min(550px,94vw);color:#ece7d8;background:#222925;border:1px solid #827965;border-radius:8px;padding:18px}
+#shelfRoom::backdrop{background:#101612aa}
+#shelfRoom h2{margin:0;font-size:18px}
+#shelfRoom header{display:flex;align-items:center;justify-content:space-between}
+#shelfRoom p{color:#cec9ba;font-size:13px}
+.shelfRow{display:grid;grid-template-columns:1fr 1fr .25fr 1fr 1fr;align-items:stretch;gap:2px;margin:16px 0}
+.shelfRow span{display:grid;place-items:center;background:#433b30;color:#f2e6ca;text-align:center;padding:6px 2px;border-bottom:3px solid #897655}
+.shelfRow span:nth-child(3){grid-column:4}
+.recallSpot{position:absolute;transform:translate(-50%,-50%);display:grid;align-content:center;gap:.15em;width:calc(var(--recall-tile)*1.92);height:calc(var(--recall-tile)*1.65);padding:.16em .25em;text-align:center;line-height:1.19;font-size:calc(var(--recall-tile)*.225);overflow:hidden;background:#242026ef;color:#f8f0db;border:1px solid #aa956e;border-radius:.35em;cursor:pointer}
+.recallSpot strong{font-size:1.04em}.recallSpot span{color:#ded2b5}
+.stage .recallSpot img{justify-self:center;width:calc(var(--recall-tile)*.42);height:calc(var(--recall-tile)*.42);object-fit:contain}
+body.sidebarClosed{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+#area,#overviewScroll{touch-action:none;overscroll-behavior:contain}
+.sidebarToggle{min-width:32px}.top strong{min-width:0}.top{gap:6px}
+#pinDetail{position:fixed;inset:auto;margin:0;padding:6px 10px;border:1px solid #6b7970;border-radius:4px;background:#252c29;color:#e8ece5;max-width:min(320px,90vw);font-size:13px;pointer-events:none}
+#exitGuides{overflow:visible}
