@@ -18,4 +18,4 @@
 
 ## 发布与下载
 
-把本目录的内容放在 GitHub 公开仓库根目录，在 Settings → Pages 选择 Deploy from a branch、main 和 /(root)。此后对该分支的修改会自动发布到同一个网页地址。侧栏的「开源仓库」打开项目首页，「下载」获取最新版地图 ZIP，解压后打开 `index.html` 即可使用。
+把本目录的内容放在 GitHub 公开仓库根目录，在 Settings → Pages 选择 Deploy from a branch、main 和 /(root)。此后对该分支的修改会自动发布到同一个网页地址。侧栏底部的「开源仓库」打开项目首页，「下载」保存单文件 HTML，双击即可离线使用。更新地图时，同步替换 `offline/blacksouls-map.html`。

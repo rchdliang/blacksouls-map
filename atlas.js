@@ -1109,5 +1109,4 @@ if(location.hostname.endsWith('.github.io')){
     const repo=project&&project!=='index.html'?project:location.hostname;
     const source=document.getElementById('sourceLink');
     source.href='https://github.com/'+owner+'/'+encodeURIComponent(decodeURIComponent(repo));
-    document.getElementById('downloadLink').href=source.href+'/archive/refs/heads/main.zip';
 }

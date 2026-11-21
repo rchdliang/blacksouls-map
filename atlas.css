@@ -49,4 +49,17 @@ body.sidebarClosed{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax
 .sidebarToggle{min-width:32px}.top strong{min-width:0}.top{gap:6px}
 #pinDetail{position:fixed;inset:auto;margin:0;padding:6px 10px;border:1px solid #6b7970;border-radius:4px;background:#252c29;color:#e8ece5;max-width:min(320px,90vw);font-size:13px;pointer-events:none}
 #exitGuides{overflow:visible}
-.sidebarLinks{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+
+#sidebar:not([hidden]){display:flex;flex-direction:column;min-height:0;padding:0;overflow:hidden}
+.sidebarContent{flex:1 1 auto;min-height:0;overflow:auto;padding:20px}
+.sidebarLinks{flex:none;display:flex;gap:8px;padding:12px 16px;border-top:1px solid #414a45}
+.sidebarLinks a{display:inline-flex;flex:1;align-items:center;justify-content:center;gap:7px;
+    min-height:42px;border:1px solid #55625b;border-radius:7px;color:#e4eae5;background:#2b3430;
+    font-size:14px;font-weight:600;text-decoration:none}
+.sidebarLinks a:hover{background:#37463d;border-color:#879b8b}
+.sidebarLinks .downloadButton{background:#b7ceba;border-color:#b7ceba;color:#18271d}
+.sidebarLinks .downloadButton:hover{background:#cde0ce;border-color:#cde0ce}
+.sidebarLinks a:focus-visible{outline:2px solid #ffdf8f;outline-offset:2px}
+.sidebarLinks svg{width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;
+    stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:720px){.sidebarContent{padding:10px 14px}.sidebarLinks{padding:5px 12px}.sidebarLinks a{min-height:36px}}
