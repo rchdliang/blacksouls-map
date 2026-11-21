@@ -18,4 +18,4 @@
 
 ## 发布与下载
 
-把本目录的内容放在 GitHub 公开仓库根目录，在 Settings → Pages 选择 Deploy from a branch、main 和 /(root)。此后对该分支的修改会自动发布到同一个网页地址。访客可以在侧栏点「下载与修改」进入仓库，通过 Code → Download ZIP 下载，或 Fork 后维护自己的版本。
+把本目录的内容放在 GitHub 公开仓库根目录，在 Settings → Pages 选择 Deploy from a branch、main 和 /(root)。此后对该分支的修改会自动发布到同一个网页地址。侧栏的「开源仓库」打开项目首页，「下载」获取最新版地图 ZIP，解压后打开 `index.html` 即可使用。

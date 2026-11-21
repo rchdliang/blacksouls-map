@@ -49,3 +49,4 @@ body.sidebarClosed{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax
 .sidebarToggle{min-width:32px}.top strong{min-width:0}.top{gap:6px}
 #pinDetail{position:fixed;inset:auto;margin:0;padding:6px 10px;border:1px solid #6b7970;border-radius:4px;background:#252c29;color:#e8ece5;max-width:min(320px,90vw);font-size:13px;pointer-events:none}
 #exitGuides{overflow:visible}
+.sidebarLinks{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
